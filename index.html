@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #d5b3ce;
+      color:#f5f3ef;
+      font-family: 'Inter', sans-serif;
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 760px;
+      width: 100%;
+    }
+
+    /* Photos */
+    .photos img {
+      width: 100%;
+      display: block;
+      margin-bottom: 40px;
+      border-radius: 4px;
+    }
+
+    /* Text */
+    .line {
+      width: 40px;
+      height: 1px;
+      background: #b9a16b;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 400;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.05rem;
+      line-height: 2;
+      margin-bottom: 28px;
+    }
+
+    /* Question */
+    .question {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.6rem;
+      margin-bottom: 40px;
+    }
+
+    .answers span {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-bottom: 1px solid #1f1f1f;
+      padding-bottom: 4px;
+    }
+
+    /* Final */
+    .final {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      line-height: 2;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- SECTION 1: PHOTOS -->
+<section>
+  <div class="container photos">
+    <img src="photo1.jpg.jpg">
+<img src="photo2.jpg.jpg">
+<img src="photo3.jpg.jpg">
+
+
+  </div>
+</section>
+
+<!-- SECTION 2: LETTER -->
+<section>
+  <div class="container">
+    <div class="line"></div>
+    <h1>For you.</h1>
+
+    <p>
+      I’ve never been good at distance. And yet, with you, it has taught me something unexpected —
+      that presence isn’t measured in miles.
+    </p>
+
+    <p>
+      You exist in my days quietly. In decisions. In pauses. In moments where I smile for no visible reason.
+      Loving you feels less like noise and more like certainty.
+    </p>
+
+    <p>
+      So I wanted to ask you this properly. Without spectacle. Without exaggeration. Just honesty.
+    </p>
+  </div>
+</section>
+
+<!-- SECTION 3: QUESTION -->
+<section>
+  <div class="container">
+    <div class="question">Will you be my Valentine?</div>
+    <div class="answers">
+      <span onclick="accept()">Yes</span>
+      <span onclick="accept()">Of course</span>
+      <span onclick="accept()">Always</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: FINAL -->
+<section id="final">
+  <div class="container final">
+    <p>
+      I didn’t need to ask. I just wanted to say it properly. I’m glad it’s you.
+    </p>
+  </div>
+</section>
+
+<audio id="bgm" src="music.mp3.mp3"></audio>
+
+<script>
+document.body.addEventListener('click', () => {
+  document.getElementById("bgm").play();
+}, { once: true });
+</script>
+
+</script>
+
+</body>
+</html>
